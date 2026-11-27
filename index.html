@@ -17,8 +17,8 @@
 *{box-sizing:border-box}html,body{height:100%;margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;background:var(--bg);color:#1d2738}button,input,textarea{font:inherit}button{border:1px solid #cbd2e0;background:#fff;color:#22304a;border-radius:10px;min-height:42px;padding:8px 12px;cursor:pointer;touch-action:manipulation}button:active{transform:translateY(1px)}button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}button.active{background:#e8efff;border-color:#7d9be8;color:#1b4da8}button.danger{color:var(--danger)}button:disabled{opacity:.45;cursor:default}.app{height:100%;display:flex;flex-direction:column;padding-top:var(--safe-top);padding-bottom:var(--safe-bottom)}
 header{background:var(--navy);color:white;padding:10px 14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;box-shadow:0 2px 8px #17223830;z-index:20}header .brand{font-weight:750;letter-spacing:.02em;white-space:nowrap;margin-right:auto}header button{min-height:38px;padding:6px 11px;border-color:#53617a;background:#263753;color:#fff}header button.primary{background:#4c7be7;border-color:#4c7be7}header .filename{max-width:32vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#cdd6e6;font-size:13px}
 .toolbar{background:#fff;border-bottom:1px solid var(--line);padding:8px 12px;display:flex;gap:7px;align-items:center;overflow-x:auto;white-space:nowrap;scrollbar-width:thin}.toolbar button{min-height:40px}.toolbar .group{display:flex;gap:6px;align-items:center;padding-right:9px;margin-right:2px;border-right:1px solid var(--line)}.toolbar .group:last-child{border:0}.toolbar .hint{font-size:12px;color:var(--muted)}.color{width:42px;height:40px;padding:4px;border:1px solid var(--line);border-radius:10px;background:#fff}
-.workspace{display:grid;grid-template-columns:285px minmax(0,1fr);gap:0;min-height:0;flex:1}.sidebar{overflow:auto;background:#f8f9fc;border-right:1px solid var(--line);padding:12px}.panel{background:#fff;border:1px solid var(--line);border-radius:13px;margin-bottom:11px;padding:11px}.panel h2{font-size:14px;margin:0 0 9px;color:#2b3852}.panel .sub{font-size:12px;color:var(--muted);margin:-4px 0 9px}.shortcut-list{display:flex;flex-wrap:wrap;gap:6px}.shortcut{display:flex;align-items:center;gap:3px;border:1px solid #cbd7f3;background:#f0f4ff;border-radius:9px;padding:4px 5px 4px 9px;min-height:36px}.shortcut .jump{border:0;background:none;padding:3px 1px;min-height:27px;color:#234b9d;font-size:13px}.shortcut .mini{border:0;background:none;color:#68758a;padding:2px;min-height:24px;font-size:13px}.page-list{max-height:240px;overflow:auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.page-item{min-height:36px;padding:5px 2px;font-size:12px}.page-item.current{background:#e6edff;border-color:#7798e8;color:#1747a4;font-weight:700}.memo{width:100%;min-height:120px;resize:vertical;border:1px solid #d5dbe7;border-radius:9px;padding:9px;line-height:1.5;background:#fff}.memo-status{font-size:11px;color:var(--muted);margin-top:5px}.search-box{display:flex;gap:5px}.search-box input{min-width:0;width:100%;border:1px solid var(--line);border-radius:9px;padding:9px}.search-results{font-size:12px;color:var(--muted);margin-top:7px;line-height:1.5}
-.viewer{min-width:0;min-height:0;display:flex;flex-direction:column}.page-nav{background:#f8f9fc;border-bottom:1px solid var(--line);padding:8px 12px;display:flex;align-items:center;gap:7px;flex-wrap:wrap}.page-nav input{width:62px;text-align:center;min-height:40px;border:1px solid var(--line);border-radius:9px;padding:5px}.page-nav .spacer{flex:1}.page-nav .zoom-label{font-size:12px;color:var(--muted);min-width:48px;text-align:center}.stage-scroll{overflow:auto;min-height:0;flex:1;padding:18px 14px 38px;overscroll-behavior:contain;background:#dfe3eb;touch-action:pan-y}.empty{height:100%;min-height:300px;display:grid;place-items:center;text-align:center;color:#637087;padding:24px}.empty .inner{max-width:410px}.empty h1{font-size:22px;color:#273650;margin:0 0 8px}.empty p{line-height:1.7;font-size:14px}.empty button{margin:5px}.page-spread{display:flex;align-items:flex-start;justify-content:center;gap:12px;width:max-content;min-width:100%;margin:0 auto 20px}.page-wrap{position:relative;flex:none;margin:0;background:white;box-shadow:0 5px 22px #1d2c4530;touch-action:pan-y;overflow:hidden}.page-wrap canvas{position:absolute;inset:0;display:block}.page-wrap canvas.pdf-canvas{position:relative;inset:auto}.page-wrap canvas.ink-canvas{touch-action:pan-y}.stage-scroll.drawing,.stage-scroll.drawing .page-wrap,.stage-scroll.drawing .ink-canvas{touch-action:none}.page-shortcut-layer{position:absolute;inset:0;pointer-events:none;z-index:5}.pdf-shortcut{position:absolute;transform:translate(-50%,-50%);pointer-events:auto;min-height:30px;padding:4px 9px;border:1px solid #234b9d;border-radius:8px;background:#2457b9;color:#fff;font-size:12px;font-weight:700;white-space:nowrap;box-shadow:0 2px 8px #17223855;touch-action:none;user-select:none;-webkit-user-select:none}.pdf-shortcut:active{transform:translate(-50%,-50%) scale(.97)}.stage-scroll.placing{cursor:crosshair}.stage-scroll.placing .page-wrap{outline:2px dashed #3867d6;outline-offset:2px}.statusbar{height:28px;flex:none;background:#f8f9fc;border-top:1px solid var(--line);padding:4px 12px;font-size:11px;color:var(--muted);display:flex;align-items:center;justify-content:space-between}
+.workspace{display:grid;grid-template-columns:285px minmax(0,1fr);gap:0;min-height:0;flex:1}.sidebar{overflow:auto;background:#f8f9fc;border-right:1px solid var(--line);padding:12px}.panel{background:#fff;border:1px solid var(--line);border-radius:13px;margin-bottom:11px;padding:11px}.panel h2{font-size:14px;margin:0 0 9px;color:#2b3852}.panel .sub{font-size:12px;color:var(--muted);margin:-4px 0 9px}.shortcut-list{display:flex;flex-wrap:wrap;gap:6px}.shortcut{display:flex;align-items:center;gap:3px;border:1px solid #cbd7f3;background:#f0f4ff;border-radius:9px;padding:4px 5px 4px 3px;min-height:36px;cursor:grab;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}.shortcut .grip{color:#8a97b0;font-size:15px;line-height:1;padding:6px 3px;touch-action:none;cursor:grab}.shortcut .jump{cursor:inherit}.shortcut .jump{border:0;background:none;padding:3px 1px;min-height:27px;color:#234b9d;font-size:13px}.shortcut .mini{border:0;background:none;color:#68758a;padding:2px;min-height:24px;font-size:13px}.page-list{max-height:240px;overflow:auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.page-item{min-height:36px;padding:5px 2px;font-size:12px}.page-item.current{background:#e6edff;border-color:#7798e8;color:#1747a4;font-weight:700}.memo{width:100%;min-height:120px;resize:vertical;border:1px solid #d5dbe7;border-radius:9px;padding:9px;line-height:1.5;background:#fff}.memo-status{font-size:11px;color:var(--muted);margin-top:5px}.search-box{display:flex;gap:5px}.search-box input{min-width:0;width:100%;border:1px solid var(--line);border-radius:9px;padding:9px}.search-results{font-size:12px;color:var(--muted);margin-top:7px;line-height:1.5}
+.viewer{min-width:0;min-height:0;display:flex;flex-direction:column}.page-nav{background:#f8f9fc;border-bottom:1px solid var(--line);padding:8px 12px;display:flex;align-items:center;gap:7px;flex-wrap:wrap}.page-nav input{width:62px;text-align:center;min-height:40px;border:1px solid var(--line);border-radius:9px;padding:5px}.page-nav .spacer{flex:1}.page-nav .zoom-label{font-size:12px;color:var(--muted);min-width:48px;text-align:center}.stage-scroll{overflow:auto;min-height:0;flex:1;padding:18px 14px 38px;overscroll-behavior:contain;background:#dfe3eb;touch-action:pan-y}.empty{height:100%;min-height:300px;display:grid;place-items:center;text-align:center;color:#637087;padding:24px}.empty .inner{max-width:410px}.empty h1{font-size:22px;color:#273650;margin:0 0 8px}.empty p{line-height:1.7;font-size:14px}.empty button{margin:5px}.page-spread{display:flex;align-items:flex-start;justify-content:center;gap:12px;width:max-content;min-width:100%;margin:0 auto 20px}.page-wrap{position:relative;flex:none;margin:0;background:white;box-shadow:0 5px 22px #1d2c4530;touch-action:pan-y;overflow:hidden}.page-wrap canvas{position:absolute;inset:0;display:block}.page-wrap canvas.pdf-canvas{position:relative;inset:auto}.page-wrap canvas.ink-canvas{touch-action:pan-y}.stage-scroll.drawing,.stage-scroll.drawing .page-wrap,.stage-scroll.drawing .ink-canvas{touch-action:none}.page-shortcut-layer{position:absolute;inset:0;pointer-events:none;z-index:5}.pdf-shortcut{position:absolute;display:flex;align-items:center;justify-content:center;padding:0;border:1px solid #234b9d;border-radius:8px;background:#2457b9;color:#fff;font-weight:700;line-height:1;white-space:nowrap;pointer-events:auto;cursor:pointer;box-shadow:0 2px 8px #17223855;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;outline:none}.pdf-shortcut:active{filter:brightness(.92)}.pdf-shortcut:focus-visible{box-shadow:0 0 0 3px #9db8f5}.pdf-shortcut-label{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;pointer-events:none}.pdf-shortcut .rh{position:absolute;width:30px;height:30px;z-index:1;touch-action:none}.pdf-shortcut .rh::after{content:"";position:absolute;left:50%;top:50%;width:11px;height:11px;margin:-5.5px 0 0 -5.5px;border-radius:50%;background:#fff;border:2px solid #2457b9;box-shadow:0 1px 3px #0006}.rh-nw{left:-15px;top:-15px;cursor:nwse-resize}.rh-ne{right:-15px;top:-15px;cursor:nesw-resize}.rh-sw{left:-15px;bottom:-15px;cursor:nesw-resize}.rh-se{right:-15px;bottom:-15px;cursor:nwse-resize}.page-wrap.drop-target{outline:3px dashed #3867d6;outline-offset:3px}.drag-ghost{position:fixed;z-index:200;left:0;top:0;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;height:34px;padding:0 12px;border:1px solid #234b9d;border-radius:8px;background:#2457b9;color:#fff;font-size:13px;font-weight:700;line-height:1;white-space:nowrap;box-shadow:0 6px 18px #17223880;opacity:.92;pointer-events:none;overflow:hidden;text-overflow:ellipsis}body.dragging-shortcut,body.dragging-shortcut *{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}.statusbar{height:28px;flex:none;background:#f8f9fc;border-top:1px solid var(--line);padding:4px 12px;font-size:11px;color:var(--muted);display:flex;align-items:center;justify-content:space-between}
 .modal-backdrop{position:fixed;inset:0;background:#121c30a6;z-index:100;display:none;align-items:center;justify-content:center;padding:18px}.modal-backdrop.show{display:flex}.modal{background:white;border-radius:16px;padding:18px;width:min(430px,100%);box-shadow:0 18px 60px #0004}.modal h2{font-size:18px;margin:0 0 8px}.modal p{font-size:13px;line-height:1.5;color:var(--muted)}.modal label{display:block;font-size:13px;margin:10px 0 5px}.modal input,.modal textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:9px}.modal textarea{min-height:90px}.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:14px}
 .toast{position:fixed;bottom:calc(22px + var(--safe-bottom));left:50%;transform:translateX(-50%);background:#172238;color:#fff;padding:10px 15px;border-radius:999px;font-size:13px;box-shadow:0 4px 18px #0003;z-index:110;opacity:0;pointer-events:none;transition:opacity .2s}.toast.show{opacity:1}
 #pdfFile,#projectFile{display:none}.install-note{font-size:12px;line-height:1.6;color:var(--muted)}
@@ -46,7 +46,7 @@ header{background:var(--navy);color:white;padding:10px 14px;display:flex;gap:10p
 </div>
 <div class="workspace">
   <aside class="sidebar" id="sidebar">
-    <section class="panel"><h2>ページショートカット</h2><p class="sub">現在のページを登録して素早く移動</p><button id="addShortcutBtn" style="width:100%;margin-bottom:8px">＋ 現在ページを登録</button><div id="shortcutList" class="shortcut-list"><span class="sub">まだ登録されていません</span></div></section>
+    <section class="panel"><h2>ページショートカット</h2><p class="sub">現在のページを登録。各項目をPDFのページ上へドラッグ＆ドロップすると、その位置にボタンを配置できます（配置後は四隅をドラッグしてサイズ変更）</p><button id="addShortcutBtn" style="width:100%;margin-bottom:8px">＋ 現在ページを登録</button><div id="shortcutList" class="shortcut-list"><span class="sub">まだ登録されていません</span></div></section>
     <section class="panel"><h2>ページ一覧</h2><div id="pageList" class="page-list"><span class="sub">PDFを開くとページ一覧が表示されます</span></div></section>
     <section class="panel"><h2>このページのメモ</h2><textarea id="pageMemo" class="memo" placeholder="このページの要点、NPC情報、判定、伏線など..."></textarea><div id="memoStatus" class="memo-status">ローカルに自動保存されます</div></section>
     <section class="panel"><h2>検索結果</h2><div id="searchResults" class="search-results">検索語を入力して検索してください。</div></section>
@@ -54,7 +54,7 @@ header{background:var(--navy);color:white;padding:10px 14px;display:flex;gap:10p
   </aside>
   <main class="viewer">
     <div class="page-nav">
-      <button id="prevPage">◀ 前へ</button><button id="nextPage">次へ ▶</button><span class="hint">ページ</span><input id="pageNumber" type="number" min="1" value="-" aria-label="ページ番号"><span id="pageTotal" class="hint">/ -</span><button id="goPage">移動</button><div class="spacer"></div><button id="zoomOut" aria-label="5%縮小">−</button><span id="zoomLabel" class="zoom-label">100%</span><button id="zoomIn" aria-label="5%拡大">＋</button><label class="hint" for="displayMode">表示</label><select id="displayMode" aria-label="ページ表示" style="min-height:40px;border:1px solid var(--line);border-radius:9px;padding:5px 8px;background:#fff;color:#22304a"><option value="single">1ページ</option><option value="double">2ページ</option></select><button id="fitBtn">幅に合わせる</button><button id="placeShortcutBtn">＋ PDF内に配置</button>
+      <button id="prevPage">◀ 前へ</button><button id="nextPage">次へ ▶</button><span class="hint">ページ</span><input id="pageNumber" type="number" min="1" value="-" aria-label="ページ番号"><span id="pageTotal" class="hint">/ -</span><button id="goPage">移動</button><div class="spacer"></div><button id="zoomOut" aria-label="5%縮小">−</button><span id="zoomLabel" class="zoom-label">100%</span><button id="zoomIn" aria-label="5%拡大">＋</button><label class="hint" for="displayMode">表示</label><select id="displayMode" aria-label="ページ表示" style="min-height:40px;border:1px solid var(--line);border-radius:9px;padding:5px 8px;background:#fff;color:#22304a"><option value="single">1ページ</option><option value="double">2ページ</option></select><button id="fitBtn">幅に合わせる</button>
     </div>
     <div id="stage" class="stage-scroll">
       <div class="empty"><div class="inner"><h1>TRPG PDF Workspace</h1><p>TRPGシナリオPDFを読み込み、Apple Pencilや指で注釈を書き込めます。ページショートカット、ページ別メモ、プロジェクト保存にも対応しています。</p><button id="emptyOpenBtn" class="primary">PDFを選択</button><p class="install-note">iPadではSafariの共有メニューから「ホーム画面に追加」すると、アプリのように起動できます。</p></div></div>
@@ -73,7 +73,7 @@ import * as pdfjsLib from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38
 pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs';
 
 const $ = (id) => document.getElementById(id);
-const state = {pdfBytes:null,pdfName:'',pdfDoc:null,page:1,zoom:1,displayMode:'single',tool:'select',color:'#d12d36',annotations:{},shortcuts:[],memos:{},undo:[],searchMatches:[],searchIndex:-1,renderTasks:[],saveTimer:null,dirty:false,modalResolve:null};
+const state = {pdfBytes:null,pdfName:'',pdfDoc:null,page:1,zoom:1,displayMode:'single',tool:'select',color:'#d12d36',annotations:{},shortcuts:[],placements:[],memos:{},undo:[],searchMatches:[],searchIndex:-1,renderTasks:[],saveTimer:null,dirty:false,modalResolve:null};
 const DB_NAME='trpg-pdf-workspace-ipad', STORE='projects', DB_VERSION=1;
 let dbPromise;
 function openDB(){if(dbPromise)return dbPromise;dbPromise=new Promise((resolve,reject)=>{const req=indexedDB.open(DB_NAME,DB_VERSION);req.onupgradeneeded=()=>{const db=req.result;if(!db.objectStoreNames.contains(STORE))db.createObjectStore(STORE)};req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)});return dbPromise}
@@ -88,95 +88,239 @@ function clone(obj){return JSON.parse(JSON.stringify(obj))}
 function currentAnnotations(pageNo=state.page){const key=String(pageNo);if(!state.annotations[key])state.annotations[key]=[];return state.annotations[key]}
 function snapshot(pageNo=state.page){state.undo.push({page:pageNo,items:clone(currentAnnotations(pageNo))});if(state.undo.length>50)state.undo.shift()}
 function scheduleSave(){state.dirty=true;$('saveStatus').textContent='保存中…';clearTimeout(state.saveTimer);state.saveTimer=setTimeout(async()=>{try{await persistLocal();$('saveStatus').textContent='このiPadに保存済み';state.dirty=false}catch(e){$('saveStatus').textContent='自動保存できません';console.error(e)}},600)}
-function projectObject(includePdf=true){return {format:'trpg-pdf-workspace',version:2,savedAt:new Date().toISOString(),pdfName:state.pdfName,pdfBase64:includePdf&&state.pdfBytes?bytesToBase64(state.pdfBytes):null,page:state.page,zoom:state.zoom,displayMode:state.displayMode,annotations:state.annotations,shortcuts:state.shortcuts,memos:state.memos}}
+function projectObject(includePdf=true){return {format:'trpg-pdf-workspace',version:3,savedAt:new Date().toISOString(),pdfName:state.pdfName,pdfBase64:includePdf&&state.pdfBytes?bytesToBase64(state.pdfBytes):null,page:state.page,zoom:state.zoom,displayMode:state.displayMode,annotations:state.annotations,shortcuts:state.shortcuts,placements:state.placements,memos:state.memos}}
 async function persistLocal(){const data={...projectObject(false),pdfBlob:state.pdfBytes?new Blob([state.pdfBytes],{type:'application/pdf'}):null};await idbPut('autosave',data)}
 function bytesToBase64(bytes){let s='';const step=0x8000;for(let i=0;i<bytes.length;i+=step)s+=String.fromCharCode(...bytes.subarray(i,i+step));return btoa(s)}
 function base64ToBytes(str){const bin=atob(str);const out=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)out[i]=bin.charCodeAt(i);return out}
 function downloadBlob(blob,name){const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000)}
 function safeName(name){return (name||'TRPG_Scenario').replace(/\.pdf$/i,'').replace(/[\\/:*?"<>|]/g,'_')}
-async function loadPdf(bytes,name,project={}){if(state.renderTasks?.length){state.renderTasks.forEach(t=>{try{t.cancel()}catch{}})};state.pdfBytes=bytes instanceof Uint8Array?bytes:new Uint8Array(bytes);state.pdfName=name||'scenario.pdf';setStatus('PDFを読み込んでいます…');const loading=pdfjsLib.getDocument({data:state.pdfBytes.slice()});state.pdfDoc=await loading.promise;state.page=Math.min(Math.max(1,Number(project.page)||1),state.pdfDoc.numPages);state.zoom=Math.max(.20,Math.min(2.2,Number(project.zoom)||1));state.displayMode=project.displayMode==='double'?'double':'single';$('displayMode').value=state.displayMode;state.annotations=project.annotations||{};state.shortcuts=project.shortcuts||[];state.memos=project.memos||{};state.undo=[];state.searchMatches=[];state.searchIndex=-1;$('filename').textContent=state.pdfName;$('pageNumber').value=state.page;$('pageTotal').textContent='/ '+state.pdfDoc.numPages;$('zoomLabel').textContent=Math.round(state.zoom*100)+'%';renderPageList();renderShortcuts();loadMemo();await renderPage();scheduleSave();setStatus(`${state.pdfDoc.numPages}ページを読み込みました`);}
+async function loadPdf(bytes,name,project={}){if(state.renderTasks?.length){state.renderTasks.forEach(t=>{try{t.cancel()}catch{}})};state.pdfBytes=bytes instanceof Uint8Array?bytes:new Uint8Array(bytes);state.pdfName=name||'scenario.pdf';setStatus('PDFを読み込んでいます…');const loading=pdfjsLib.getDocument({data:state.pdfBytes.slice()});state.pdfDoc=await loading.promise;state.page=Math.min(Math.max(1,Number(project.page)||1),state.pdfDoc.numPages);state.zoom=Math.max(.20,Math.min(2.2,Number(project.zoom)||1));state.displayMode=project.displayMode==='double'?'double':'single';$('displayMode').value=state.displayMode;state.annotations=project.annotations||{};state.shortcuts=Array.isArray(project.shortcuts)?project.shortcuts:[];state.placements=Array.isArray(project.placements)?project.placements:[];normalizeShortcuts();state.memos=project.memos||{};state.undo=[];state.searchMatches=[];state.searchIndex=-1;$('filename').textContent=state.pdfName;$('pageNumber').value=state.page;$('pageTotal').textContent='/ '+state.pdfDoc.numPages;$('zoomLabel').textContent=Math.round(state.zoom*100)+'%';renderPageList();renderShortcuts();loadMemo();await renderPage();scheduleSave();setStatus(`${state.pdfDoc.numPages}ページを読み込みました`);}
 function renderPageList(){const c=$('pageList');c.innerHTML='';if(!state.pdfDoc)return;for(let i=1;i<=state.pdfDoc.numPages;i++){const b=document.createElement('button');b.className='page-item'+(i===state.page?' current':'');b.textContent=i;b.onclick=()=>goToPage(i);c.appendChild(b)}}
-function renderShortcuts(){const c=$('shortcutList');c.innerHTML='';if(!state.shortcuts.length){c.innerHTML='<span class="sub">まだ登録されていません</span>';return}state.shortcuts.forEach((s,index)=>{const wrap=document.createElement('div');wrap.className='shortcut';const jump=document.createElement('button');jump.className='jump';jump.textContent=`${s.name} · ${s.page}P`;jump.onclick=()=>goToPage(s.page);const edit=document.createElement('button');edit.className='mini';edit.title='名前を変更';edit.textContent='✎';edit.onclick=async()=>{const name=await ask('ショートカット名を変更','移動先ページは変更されません。','名前',s.name);if(name){s.name=name;renderShortcuts();scheduleSave()}};const del=document.createElement('button');del.className='mini';del.title='削除';del.textContent='×';del.onclick=()=>{state.shortcuts.splice(index,1);renderShortcuts();scheduleSave()};wrap.append(jump,edit,del);c.appendChild(wrap)})}
+function renderShortcuts(){const c=$('shortcutList');c.innerHTML='';if(!state.shortcuts.length){c.innerHTML='<span class="sub">まだ登録されていません</span>';return}state.shortcuts.forEach((s,index)=>{const wrap=document.createElement('div');wrap.className='shortcut';wrap.dataset.id=s.id;wrap.title='ドラッグしてPDFのページ上に配置';const grip=document.createElement('span');grip.className='grip';grip.textContent='⠿';grip.setAttribute('aria-hidden','true');const jump=document.createElement('button');jump.className='jump';jump.textContent=`${s.name} · ${s.page}P`;jump.onclick=()=>goToPage(s.page);const edit=document.createElement('button');edit.className='mini';edit.title='名前を変更';edit.textContent='✎';edit.onclick=async()=>{const name=await ask('ショートカット名を変更','移動先ページは変更されません。PDF内に配置したボタンの表示名も変わります。','名前',s.name);if(name){s.name=name;renderShortcuts();refreshPlacedButtons();scheduleSave()}};const del=document.createElement('button');del.className='mini';del.title='削除';del.textContent='×';del.onclick=()=>{const n=state.placements.filter(p=>p.shortcutId===s.id).length;if(n&&!confirm(`「${s.name}」を削除します。\nPDF内に配置した${n}個のボタンも削除されます。`))return;state.shortcuts.splice(index,1);state.placements=state.placements.filter(p=>p.shortcutId!==s.id);renderShortcuts();refreshPlacedButtons();scheduleSave()};wrap.append(grip,jump,edit,del);bindShortcutDrag(wrap,s);c.appendChild(wrap)})}
 function loadMemo(){const memo=$('pageMemo');memo.value=state.memos[String(state.page)]||'';$('memoStatus').textContent='ページ '+state.page+' のメモ'}
 async function goToPage(n){if(!state.pdfDoc)return;const page=Math.max(1,Math.min(state.pdfDoc.numPages,Math.floor(Number(n)||1)));state.page=page;$('pageNumber').value=page;document.querySelectorAll('.page-item').forEach((b,i)=>b.classList.toggle('current',i===page-1));loadMemo();await renderPage();scheduleSave()}
 function drawAnnotations(ctx,w,h,pageNo){const list=state.annotations[String(pageNo)]||[];ctx.save();ctx.lineCap='round';ctx.lineJoin='round';for(const item of list){if(item.type==='stroke'){if(!item.points||item.points.length<1)continue;ctx.globalAlpha=item.tool==='highlight'?.34:1;ctx.strokeStyle=item.color||'#d12d36';ctx.lineWidth=Math.max(1,(item.width||.003)*w);ctx.beginPath();ctx.moveTo(item.points[0].x*w,item.points[0].y*h);for(let i=1;i<item.points.length;i++)ctx.lineTo(item.points[i].x*w,item.points[i].y*h);if(item.points.length===1){ctx.lineTo(item.points[0].x*w+.1,item.points[0].y*h+.1)}ctx.stroke();ctx.globalAlpha=1}else if(item.type==='text'){ctx.fillStyle=item.color||'#d12d36';const size=(item.size||.025)*w;ctx.font=`600 ${size}px -apple-system,BlinkMacSystemFont,sans-serif`;const lines=String(item.text||'').split('\n');lines.forEach((line,i)=>ctx.fillText(line,item.x*w,item.y*h+i*size*1.25))}}ctx.restore()}
-let placingShortcut=false;
 let pinchState=null;
 let pinchRenderTimer=null;
 
+/* ===== ショートカット：データ補正 =====
+   state.shortcuts  : 登録済みショートカット [{id,name,page}]（サイドバーの項目。page=移動先）
+   state.placements : PDF内に配置したボタン [{id,shortcutId,page,x,y,w,h}]
+     page = 配置先ページ / x,y = ボタン中心（ページ幅・高さに対する比率）
+     w,h  = ボタンの幅・高さ（どちらもページ幅に対する比率） */
+const PLACE_PAD=.035,PLACE_H=.045;
+function newId(prefix){return prefix+Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
+function clampNum(v,lo,hi){if(lo>hi)return (lo+hi)/2;return Math.max(lo,Math.min(hi,v))}
+function textUnits(str){let u=0;for(const ch of String(str||''))u+=ch.charCodeAt(0)>255?1:.62;return Math.max(1,u)}
+function defaultPlacementSize(name){const w=clampNum(textUnits(name)*PLACE_H*.45+PLACE_PAD,.09,.5);return {w,h:PLACE_H}}
+function fitFont(name,wpx,hpx,pageW){return Math.max(7,Math.min(hpx*.5,(wpx-PLACE_PAD*pageW)/textUnits(name)))}
+function normalizeShortcuts(){
+ state.shortcuts=state.shortcuts.filter(s=>s&&typeof s==='object');
+ state.shortcuts.forEach(s=>{if(!s.id)s.id=newId('s');s.page=Math.max(1,Math.floor(Number(s.page)||1))});
+ // 旧バージョン：x,y を持つショートカット＝その場に置かれたボタン → 配置ボタンへ変換
+ state.shortcuts.forEach(s=>{
+  if(s.x!=null&&s.y!=null&&Number.isFinite(Number(s.x))&&Number.isFinite(Number(s.y))){
+   const size=defaultPlacementSize(s.name);
+   state.placements.push({id:newId('p'),shortcutId:s.id,page:s.page,x:Number(s.x),y:Number(s.y),w:size.w,h:size.h});
+  }
+  delete s.x;delete s.y;
+ });
+ const ids=new Set(state.shortcuts.map(s=>s.id));
+ state.placements=state.placements.filter(p=>p&&ids.has(p.shortcutId)).map(p=>{
+  const size=defaultPlacementSize((state.shortcuts.find(s=>s.id===p.shortcutId)||{}).name);
+  const w=Number(p.w),h=Number(p.h);
+  return {id:p.id||newId('p'),shortcutId:p.shortcutId,page:Math.max(1,Math.floor(Number(p.page)||1)),
+   x:clampNum(Number(p.x),0,1)||0,y:clampNum(Number(p.y),0,1)||0,
+   w:Number.isFinite(w)&&w>0?Math.min(1,w):size.w,h:Number.isFinite(h)&&h>0?Math.min(1,h):size.h};
+ });
+}
+
+/* ===== PDF内に配置したボタンの表示・移動・サイズ変更 ===== */
+function refreshPlacedButtons(){document.querySelectorAll('.page-wrap').forEach(w=>renderPageShortcuts(w,Number(w.dataset.page)))}
 function renderPageShortcuts(wrap,pageNo){
  const old=wrap.querySelector('.page-shortcut-layer');
  if(old)old.remove();
- const items=state.shortcuts.map((item,index)=>({item,index})).filter(x=>Number(x.item.page)===pageNo&&Number.isFinite(Number(x.item.x))&&Number.isFinite(Number(x.item.y)));
- if(!items.length)return;
+ const list=state.placements.filter(p=>Number(p.page)===pageNo);
+ if(!list.length)return;
  const layer=document.createElement('div');
  layer.className='page-shortcut-layer';
- items.forEach(({item,index})=>{
-  const button=document.createElement('button');
-  button.type='button';
-  button.className='pdf-shortcut';
-  button.textContent=item.name||'ショートカット';
-  button.style.left=(Math.max(0,Math.min(1,Number(item.x)))*100)+'%';
-  button.style.top=(Math.max(0,Math.min(1,Number(item.y)))*100)+'%';
-  button.title='ドラッグして位置を変更';
-  let drag=null;
-  button.addEventListener('pointerdown',e=>{
-   e.preventDefault();e.stopPropagation();
-   drag={pointerId:e.pointerId,startX:e.clientX,startY:e.clientY,moved:false};
-   button.setPointerCapture(e.pointerId);
-  });
-  button.addEventListener('pointermove',e=>{
-   if(!drag||drag.pointerId!==e.pointerId)return;
-   const dx=e.clientX-drag.startX,dy=e.clientY-drag.startY;
-   if(Math.abs(dx)+Math.abs(dy)>3)drag.moved=true;
-   if(drag.moved){
-    const rect=wrap.getBoundingClientRect();
-    button.style.left=(Math.max(0,Math.min(1,(e.clientX-rect.left)/rect.width))*100)+'%';
-    button.style.top=(Math.max(0,Math.min(1,(e.clientY-rect.top)/rect.height))*100)+'%';
-   }
-  });
-  const finish=e=>{
-   if(!drag||drag.pointerId!==e.pointerId)return;
-   if(drag.moved){
-    const rect=wrap.getBoundingClientRect();
-    item.x=Math.max(0,Math.min(1,(e.clientX-rect.left)/rect.width));
-    item.y=Math.max(0,Math.min(1,(e.clientY-rect.top)/rect.height));
-    button.style.left=(item.x*100)+'%';button.style.top=(item.y*100)+'%';
-    scheduleSave();
-   }
-   drag=null;
-  };
-  button.addEventListener('pointerup',finish);
-  button.addEventListener('pointercancel',finish);
-  button.addEventListener('click',e=>{e.stopPropagation();if(!drag)goToPage(item.page)});
-  layer.appendChild(button);
- });
+ list.forEach(p=>layer.appendChild(buildPlacedButton(wrap,p)));
  wrap.appendChild(layer);
 }
+function buildPlacedButton(wrap,p){
+ const el=document.createElement('div');
+ el.className='pdf-shortcut';el.setAttribute('role','button');el.tabIndex=0;
+ const label=document.createElement('span');label.className='pdf-shortcut-label';el.appendChild(label);
+ ['nw','ne','sw','se'].forEach(c=>{const h=document.createElement('span');h.className='rh rh-'+c;h.dataset.corner=c;el.appendChild(h)});
+ const target=()=>state.shortcuts.find(s=>s.id===p.shortcutId);
+ const layout=()=>{
+  const W=wrap.offsetWidth,H=wrap.offsetHeight,wpx=p.w*W,hpx=p.h*W,sc=target();
+  el.style.width=wpx+'px';el.style.height=hpx+'px';
+  el.style.left=(p.x*W-wpx/2)+'px';el.style.top=(p.y*H-hpx/2)+'px';
+  label.textContent=sc?sc.name:'';
+  label.style.fontSize=fitFont(sc?sc.name:'',wpx,hpx,W)+'px';
+  el.title=sc?`${sc.name}（${sc.page}ページへ移動）／ドラッグで移動・四隅でサイズ変更・長押しで配置を削除`:'';
+ };
+ layout();
+ const jump=()=>{const sc=target();if(sc)goToPage(sc.page)};
+ const removeThis=()=>{
+  const sc=target();
+  if(confirm(`「${sc?sc.name:'このボタン'}」をこのページから外しますか？\n（登録済みのショートカット自体は残ります）`)){
+   state.placements=state.placements.filter(x=>x.id!==p.id);renderPageShortcuts(wrap,Number(wrap.dataset.page));scheduleSave();toast('配置を外しました');
+  }
+ };
+ // --- 本体：タップで移動先へジャンプ／ドラッグで位置変更／長押しで削除 ---
+ let drag=null,pressTimer=null;
+ el.addEventListener('pointerdown',e=>{
+  if(e.target.closest('.rh'))return;
+  if(e.pointerType==='mouse'&&e.button!==0)return;
+  e.preventDefault();e.stopPropagation();
+  drag={id:e.pointerId,sx:e.clientX,sy:e.clientY,ox:p.x,oy:p.y,moved:false};
+  try{el.setPointerCapture(e.pointerId)}catch{}
+  clearTimeout(pressTimer);
+  pressTimer=setTimeout(()=>{if(!drag||drag.moved)return;const id=drag.id;drag=null;try{el.releasePointerCapture(id)}catch{}removeThis()},700);
+ });
+ el.addEventListener('pointermove',e=>{
+  if(!drag||drag.id!==e.pointerId)return;
+  const dx=e.clientX-drag.sx,dy=e.clientY-drag.sy;
+  if(!drag.moved&&Math.abs(dx)+Math.abs(dy)>4){drag.moved=true;clearTimeout(pressTimer)}
+  if(!drag.moved)return;
+  const W=wrap.offsetWidth,H=wrap.offsetHeight,hw=p.w/2,hh=p.h*W/H/2;
+  p.x=clampNum(drag.ox+dx/W,hw,1-hw);p.y=clampNum(drag.oy+dy/H,hh,1-hh);
+  layout();
+ });
+ const finish=(e,cancelled)=>{
+  if(!drag||drag.id!==e.pointerId)return;
+  clearTimeout(pressTimer);
+  const d=drag;drag=null;
+  if(d.moved)scheduleSave();else if(!cancelled)jump();
+ };
+ el.addEventListener('pointerup',e=>finish(e,false));
+ el.addEventListener('pointercancel',e=>finish(e,true));
+ el.addEventListener('contextmenu',e=>{e.preventDefault();if(!drag)removeThis()});
+ el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();jump()}});
+ // --- 四隅：ドラッグでサイズ変更（対角の角を固定） ---
+ el.querySelectorAll('.rh').forEach(h=>{
+  const sx=h.dataset.corner.includes('e')?1:-1,sy=h.dataset.corner.includes('s')?1:-1;
+  let rs=null;
+  h.addEventListener('pointerdown',e=>{
+   if(e.pointerType==='mouse'&&e.button!==0)return;
+   e.preventDefault();e.stopPropagation();
+   const W=wrap.offsetWidth,H=wrap.offsetHeight,r=wrap.getBoundingClientRect();
+   const wpx=p.w*W,hpx=p.h*W,l=p.x*W-wpx/2,t=p.y*H-hpx/2;
+   const cx=sx>0?l+wpx:l,cy=sy>0?t+hpx:t;
+   rs={id:e.pointerId,W,H,fx:sx>0?l:l+wpx,fy:sy>0?t:t+hpx,offX:(e.clientX-r.left)-cx,offY:(e.clientY-r.top)-cy,moved:false};
+   try{h.setPointerCapture(e.pointerId)}catch{}
+  });
+  h.addEventListener('pointermove',e=>{
+   if(!rs||rs.id!==e.pointerId)return;
+   const r=wrap.getBoundingClientRect();
+   const px=e.clientX-r.left-rs.offX,py=e.clientY-r.top-rs.offY;
+   const minW=Math.max(24,.04*rs.W),minH=Math.max(16,.022*rs.W);
+   const maxW=sx>0?rs.W-rs.fx:rs.fx,maxH=sy>0?rs.H-rs.fy:rs.fy;
+   const nw=Math.min(maxW,Math.max(minW,sx*(px-rs.fx))),nh=Math.min(maxH,Math.max(minH,sy*(py-rs.fy)));
+   const nl=sx>0?rs.fx:rs.fx-nw,nt=sy>0?rs.fy:rs.fy-nh;
+   p.w=nw/rs.W;p.h=nh/rs.W;p.x=(nl+nw/2)/rs.W;p.y=(nt+nh/2)/rs.H;
+   rs.moved=true;layout();
+  });
+  const end=e=>{if(!rs||rs.id!==e.pointerId)return;const m=rs.moved;rs=null;if(m)scheduleSave()};
+  h.addEventListener('pointerup',end);h.addEventListener('pointercancel',end);
+ });
+ return el;
+}
 
-async function createShortcutAt(wrap,clientX,clientY){
- if(!state.pdfDoc||state.tool!=='select')return;
- const rect=wrap.getBoundingClientRect();
- const x=Math.max(0,Math.min(1,(clientX-rect.left)/rect.width));
- const y=Math.max(0,Math.min(1,(clientY-rect.top)/rect.height));
+/* ===== サイドバーの項目 → PDFページへドラッグ＆ドロップで配置 =====
+   ・「⠿」ハンドル：すぐドラッグ開始
+   ・項目本体：マウスは少し動かすと開始／タッチ・ペンは長押しで開始（短くなぞればサイドバーのスクロール） */
+let shortcutDrag=null;
+const LONG_PRESS_MS=260;
+function pageWrapAt(x,y){const el=document.elementFromPoint(x,y);return el?el.closest('.page-wrap'):null}
+function bindShortcutDrag(chip,s){
+ chip.addEventListener('contextmenu',e=>e.preventDefault());
+ chip.addEventListener('pointerdown',e=>{
+  if(shortcutDrag||e.target.closest('.mini'))return;
+  if(e.pointerType==='mouse'&&e.button!==0)return;
+  const onGrip=!!e.target.closest('.grip');
+  const st=shortcutDrag={id:e.pointerId,s,x0:e.clientX,y0:e.clientY,x:e.clientX,y:e.clientY,active:false,ghost:null,wrap:null,timer:null,immediate:e.pointerType==='mouse'||onGrip};
+  if(!st.immediate)st.timer=setTimeout(()=>beginShortcutDrag(st),LONG_PRESS_MS);
+  window.addEventListener('pointermove',onShortcutMove);
+  window.addEventListener('pointerup',onShortcutUp);
+  window.addEventListener('pointercancel',onShortcutCancel);
+  window.addEventListener('keydown',onShortcutKey);
+ });
+}
+function beginShortcutDrag(st){
+ if(shortcutDrag!==st||st.active)return;
+ if(!state.pdfDoc){toast('先にPDFを開いてください');endShortcutDrag();return}
+ st.active=true;clearTimeout(st.timer);
+ const g=document.createElement('div');g.className='drag-ghost';g.textContent=st.s.name;document.body.appendChild(g);st.ghost=g;
+ document.body.classList.add('dragging-shortcut');
+ if(window.matchMedia('(max-width:850px)').matches)$('sidebar').classList.remove('open'); // 狭い画面ではサイドバーを閉じてページ全体を見せる
+ moveShortcutGhost(st);
+}
+function moveShortcutGhost(st){
+ const g=st.ghost;if(!g)return;
+ g.style.left=st.x+'px';g.style.top=st.y+'px';
+ const wrap=pageWrapAt(st.x,st.y);
+ if(st.wrap!==wrap){if(st.wrap)st.wrap.classList.remove('drop-target');if(wrap)wrap.classList.add('drop-target');st.wrap=wrap}
+ if(wrap){ // ページ上では、配置後と同じ大きさで表示
+  const r=wrap.getBoundingClientRect(),size=defaultPlacementSize(st.s.name),wpx=size.w*r.width,hpx=size.h*r.width;
+  g.style.width=wpx+'px';g.style.height=hpx+'px';g.style.padding='0';g.style.fontSize=fitFont(st.s.name,wpx,hpx,r.width)+'px';
+ }else{g.style.width='';g.style.height='';g.style.padding='';g.style.fontSize=''}
+}
+function onShortcutMove(e){
+ const st=shortcutDrag;if(!st||e.pointerId!==st.id)return;
+ st.x=e.clientX;st.y=e.clientY;
+ if(!st.active){
+  const d=Math.hypot(st.x-st.x0,st.y-st.y0);
+  if(st.immediate){if(d>5)beginShortcutDrag(st)}
+  else if(d>10){endShortcutDrag()} // 長押し前に動かした＝スクロール操作
+  return;
+ }
+ e.preventDefault();moveShortcutGhost(st);
+}
+function onShortcutUp(e){
+ const st=shortcutDrag;if(!st||e.pointerId!==st.id)return;
+ st.x=e.clientX;st.y=e.clientY;
+ const wasActive=st.active,s=st.s;
+ if(wasActive){
+  const wrap=pageWrapAt(st.x,st.y);
+  swallowNextClick();
+  endShortcutDrag();
+  if(wrap)dropShortcutOnPage(s,wrap,st.x,st.y);else toast('PDFのページの上にドロップしてください');
+ }else endShortcutDrag();
+}
+function onShortcutCancel(e){const st=shortcutDrag;if(st&&e.pointerId===st.id){if(st.active)swallowNextClick();endShortcutDrag()}}
+function onShortcutKey(e){if(e.key==='Escape'&&shortcutDrag){if(shortcutDrag.active)swallowNextClick();endShortcutDrag()}}
+function endShortcutDrag(){
+ const st=shortcutDrag;shortcutDrag=null;
+ window.removeEventListener('pointermove',onShortcutMove);window.removeEventListener('pointerup',onShortcutUp);window.removeEventListener('pointercancel',onShortcutCancel);window.removeEventListener('keydown',onShortcutKey);
+ if(!st)return;
+ clearTimeout(st.timer);
+ if(st.ghost)st.ghost.remove();
+ if(st.wrap)st.wrap.classList.remove('drop-target');
+ document.querySelectorAll('.page-wrap.drop-target').forEach(w=>w.classList.remove('drop-target'));
+ document.body.classList.remove('dragging-shortcut');
+}
+function swallowNextClick(){const off=()=>window.removeEventListener('click',f,true);const f=e=>{e.stopPropagation();e.preventDefault();off()};window.addEventListener('click',f,true);setTimeout(off,250)} // ドラッグ直後に発生するclickだけを1回だけ無効化
+// ドラッグ中はタッチによる画面スクロールを止める
+window.addEventListener('touchmove',e=>{if(shortcutDrag&&shortcutDrag.active&&e.cancelable)e.preventDefault()},{passive:false});
+function dropShortcutOnPage(s,wrap,clientX,clientY){
  const pageNo=Number(wrap.dataset.page)||state.page;
- const name=await ask('PDF内にショートカットを配置','この位置に表示するボタンの名前を入力してください。','ショートカット名',`ページ ${pageNo}`);
- if(!name)return;
- state.shortcuts.push({name,page:pageNo,x,y});
- placingShortcut=false;
- $('placeShortcutBtn').classList.remove('active');
- $('stage').classList.remove('placing');
- renderShortcuts();
- await renderPage();
+ const r=wrap.getBoundingClientRect(),W=wrap.offsetWidth,H=wrap.offsetHeight,size=defaultPlacementSize(s.name);
+ const hw=size.w/2,hh=size.h*W/H/2;
+ const x=clampNum((clientX-r.left)/r.width,hw,1-hw),y=clampNum((clientY-r.top)/r.height,hh,1-hh);
+ state.placements.push({id:newId('p'),shortcutId:s.id,page:pageNo,x,y,w:size.w,h:size.h});
+ renderPageShortcuts(wrap,pageNo);
  scheduleSave();
- toast('PDF内にショートカットを配置しました');
+ toast(`「${s.name}」を配置しました（${s.page}ページへ移動します）`);
 }
 
 function setupPinchZoom(){
  const stage=$('stage');
  const getDistance=touches=>Math.hypot(touches[0].clientX-touches[1].clientX,touches[0].clientY-touches[1].clientY);
  stage.addEventListener('touchstart',e=>{
-  if(e.touches.length===2&&state.pdfDoc&&state.tool==='select'&&!placingShortcut){
+  if(e.touches.length===2&&state.pdfDoc&&state.tool==='select'){
    pinchState={startDistance:getDistance(e.touches),startZoom:state.zoom};
    const spread=stage.querySelector('.page-spread');
    if(spread){spread.style.transformOrigin='center top';spread.style.transition='none'}
@@ -228,7 +372,7 @@ function bindInk(canvas,pageNo=state.page){canvas.onpointerdown=e=>{if(state.too
 async function addTextAt(p,pageNo=state.page){const text=await ask('PDFにテキストメモを追加','入力した内容をページ上に配置します。改行も使用できます。','メモ');if(text){snapshot(pageNo);currentAnnotations(pageNo).push({type:'text',x:p.x,y:p.y,text,color:state.color,size:.026});const canvas=document.querySelector(`.ink-canvas[data-page="${pageNo}"]`);if(canvas)redrawInk(canvas,pageNo);scheduleSave()}}
 function distance(a,b){return Math.hypot(a.x-b.x,a.y-b.y)}
 function eraseAt(p,pageNo=state.page){const items=currentAnnotations(pageNo);let best=-1,bestD=.035;items.forEach((item,i)=>{let d=1;if(item.type==='text')d=distance(p,{x:item.x,y:item.y});else if(item.points?.length){d=Math.min(...item.points.map(pt=>distance(p,pt)))}if(d<bestD){bestD=d;best=i}});if(best>=0){snapshot(pageNo);items.splice(best,1);toast('注釈を消しました')}}
-async function addShortcut(){if(!state.pdfDoc){toast('先にPDFを開いてください');return}const name=await ask('ページショートカットを登録','例：導入、NPC一覧、クライマックス','ショートカット名',`ページ ${state.page}`);if(!name)return;state.shortcuts.push({name,page:state.page});renderShortcuts();scheduleSave()}
+async function addShortcut(){if(!state.pdfDoc){toast('先にPDFを開いてください');return}const name=await ask('ページショートカットを登録','例：導入、NPC一覧、クライマックス','ショートカット名',`ページ ${state.page}`);if(!name)return;state.shortcuts.push({id:newId('s'),name,page:state.page});renderShortcuts();scheduleSave()}
 $('pageMemo').addEventListener('input',()=>{state.memos[String(state.page)]=$('pageMemo').value;$('memoStatus').textContent='変更を保存中…';scheduleSave()});
 async function openPdfPicker(){ $('pdfFile').click() }
 $('pdfFile').addEventListener('change',async e=>{const file=e.target.files?.[0];if(!file)return;try{await loadPdf(new Uint8Array(await file.arrayBuffer()),file.name);toast('PDFを読み込みました')}catch(err){console.error(err);alert('PDFを読み込めませんでした。\n'+err.message)}e.target.value='' });
@@ -239,8 +383,6 @@ $('exportBtn').onclick=async()=>{if(!state.pdfDoc){toast('先にPDFを開いて�
 $('addShortcutBtn').onclick=addShortcut;
 $('prevPage').onclick=()=>goToPage(state.page-(state.displayMode==='double'?2:1));$('nextPage').onclick=()=>goToPage(state.page+(state.displayMode==='double'?2:1));$('goPage').onclick=()=>goToPage($('pageNumber').value);$('pageNumber').addEventListener('keydown',e=>{if(e.key==='Enter')goToPage(e.target.value)});
 $('zoomIn').onclick=async()=>{state.zoom=Math.min(2.2,Math.round((state.zoom+.05)*100)/100);await renderPage();scheduleSave()};$('zoomOut').onclick=async()=>{state.zoom=Math.max(.20,Math.round((state.zoom-.05)*100)/100);await renderPage();scheduleSave()};$('fitBtn').onclick=async()=>{state.zoom=1;await renderPage();scheduleSave()};
-$('placeShortcutBtn').onclick=()=>{if(!state.pdfDoc){toast('先にPDFを開いてください');return}placingShortcut=!placingShortcut;$('placeShortcutBtn').classList.toggle('active',placingShortcut);$('stage').classList.toggle('placing',placingShortcut);toast(placingShortcut?'PDF内の配置したい場所をタップしてください':'配置モードを終了しました')};
-$('stage').addEventListener('click',e=>{if(!placingShortcut)return;const wrap=e.target.closest('.page-wrap');if(!wrap)return;e.preventDefault();e.stopPropagation();createShortcutAt(wrap,e.clientX,e.clientY)});
 setupPinchZoom();
 $('displayMode').onchange=async e=>{state.displayMode=e.target.value==='double'?'double':'single';await renderPage();scheduleSave();toast(state.displayMode==='double'?'2ページ表示に変更しました':'1ページ表示に変更しました')};
 $('undoBtn').onclick=undo;function undo(){const last=state.undo.pop();if(!last){toast('取り消せる操作がありません');return}state.annotations[String(last.page)]=last.items;const c=document.querySelector(`.ink-canvas[data-page="${last.page}"]`);if(c)redrawInk(c,last.page);scheduleSave();toast('直前の注釈を取り消しました')}
