@@ -1,4 +1,4 @@
-const CACHE_NAME = 'trpg-pdf-workspace-v1';
+const CACHE_NAME = 'trpg-pdf-workspace-v1.0.4';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon.svg', './icon-180.png', './icon-192.png', './icon-512.png'];
 const CDN = [
   'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs',
@@ -8,7 +8,7 @@ const CDN = [
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
-    await cache.addAll(CORE);
+    await cache.addAll(CORE.map(url => new Request(url, {cache: 'reload'}))); // ブラウザの古いHTTPキャッシュを避けて最新を取得
     await Promise.all(CDN.map(async url => {
       try { const response = await fetch(url, {mode:'cors'}); if (response.ok) await cache.put(url, response); }
       catch (e) { /* CDNが利用できない場合もアプリ本体の導入は続行 */ }
