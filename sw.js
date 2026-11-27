@@ -1,4 +1,4 @@
-const CACHE_NAME = 'trpg-pdf-workspace-v1.0.4';
+const CACHE_NAME = 'trpg-pdf-workspace-v1.0.5';
 const CORE = ['./', './index.html', './manifest.webmanifest', './icon.svg', './icon-180.png', './icon-192.png', './icon-512.png'];
 const CDN = [
   'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs',
